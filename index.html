@@ -1,21 +1,107 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Title</title>
+  </head>
 
-<head>
-</head>
+  <body>
+    <article>
+      <h1>Learning HTML & JavaScript</h1>
 
-<body>
-  <header>
-    <nav>
-      <!-- works like <a href="/index.html">Home</a> -->
-      <a href="/">Home</a>
-    </nav>
-  </header>
+      <div>HTML</div>
+      <div>CSS</div>
+      <div>JavaScript</div>
 
-  <main>  
-  </main>
+      <span>Hello!!</span>
+      <span>My name is Lionardus.</span>
+      <span>This is my page.</span>
 
-  <footer>Copyright &copy; 2024</footer>
-</body>
+      <p>p represents paragraph without preserving spacing</p>
+      <pre>
+      Text in         a pre element
+      is displayed in a fixed-width
+      font, and it preserves
+      both      spaces and
+      line breaks      
+    </pre
+      >
 
+      <h2>This is type of "Order List"</h2>
+      <ul>
+        Fruit
+        <li>Banana</li>
+        <li>Mango</li>
+        <li>Orange</li>
+      </ul>
+
+      <ol style="list-style-type: upper-alpha">
+        Shopping cart
+        <li>Bread</li>
+        <ol style="list-style-type: lower-alpha">
+          <li>Wholemeal</li>
+          <li>Multigrain</li>
+        </ol>
+        <li>Milk</li>
+        <li>Chicken</li>
+      </ol>
+    </article>
+
+    <article>
+      <h2 style="font-style: italic">Learning how to create Table</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>First header</th>
+            <th colspan="2">Second header</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>First cell - first row</td>
+            <td>Second cell - first row</td>
+            <td>Third cell - first row</td>
+          </tr>
+          <tr>
+            <td>First cell - second row</td>
+            <td rowspan="2">Second cell - second row</td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
+    <article>
+      <h2 style="font-style: italic">Insert Media File</h2>
+      <img src="https://picsum.photos/400/400" alt="" />
+      <img src="./assets/html_lab_image.jpg" alt="Forest" />
+      <video controls width="250" autoplay>
+        <source src="/assets/flower.webm" type="video/webm" />
+        Sorry, your browser doesn't support embedded videos.
+      </video>
+      <audio controls src="/assets/t-rex-roar.mp3" autoplay>
+        Your browser does not support the <code>audio</code> element.
+      </audio>
+
+    </article>
+
+    <header>
+      <nav>
+        <!-- works like <a href="/index.html">Home</a> -->
+        <a href="/index.html">Home</a>
+        <a href="/form.html">Form</a>
+      </nav>
+    </header>
+
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+    </style>
+
+    <main></main>
+
+    <footer>Copyright &copy; 2024</footer>
+  </body>
 </html>
