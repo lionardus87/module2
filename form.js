@@ -1,15 +1,10 @@
-document
-  .getElementById("postForm")
-  .addEventListener("submit", function (event) {
+document.getElementById("postForm").addEventListener("submit", function (event) {
     event.preventDefault();
 
     const fName = document.getElementById("firstName").value;
     const lName = document.getElementById("lastName").value;
-    const language =
-      document.querySelector('input[name="language"]:checked')?.value || "None";
-    const vehicles = Array.from(
-      document.querySelectorAll('input[name="vehicle"]:checked')
-    ).map((vehicle) => vehicle.value);
+    const language = document.querySelector('input[name="language"]:checked')?.value || "None";
+    const vehicles = Array.from(document.querySelectorAll('input[name="vehicle"]:checked')).map((vehicle) => vehicle.value);
     const carBrand = document.getElementById("carBrand").value;
 
     const formData = {
@@ -20,7 +15,7 @@ document
       carBrand: carBrand,
     };
 
-    console.log("Form Data:", formData);
+    // console.log("Form Data:", formData);
 
     localStorage.setItem("userFormData", JSON.stringify(formData));
 
