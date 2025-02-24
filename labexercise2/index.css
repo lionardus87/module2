@@ -17,10 +17,27 @@ article {
 #style-me2.style-me1 {
     color: purple;
 }
+
 /* Put styles for questions 2.1 and 2.2 here */
+.my-descendants-are-styled p {
+    background: red;
+}
+
+.my-children-are-styled > p {
+    background: lightgreen;
+}
 
 /* II. Box model and common properties */
 /* Put styles for questions 1-8 here */
+.box{
+    background-color: aqua;
+    margin: 2px;
+    padding: 3em;
+    width: 30vh;
+    height: 30vh;
+}
+
+
 
 /* III. Positioning */
 /* Put styles for questions 1-3 here */

@@ -4,61 +4,66 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form HTML</title>
+    <nav>
+      <!-- works like <a href="/index.html">Home</a> -->
+      <a href="/">Home</a>
+    </nav>
   </head>
 
   <body>
-    <form method="POST" action="http://localhost:3000/profile"></form>
-    <div>
-      <label for="firstName">First Name</label>
-      <input type="text" id="firstName" name="firstName" required>
-    </div>
-    <div>
-      <label for="lastName">Last Name</label>
-      <input type="text" id="lastName" name="lastName" required>
-    </div>
-    <button type="submit">Submit</button>
-    
-    <!-- radio button -->
-    <div>
-      <label for="faveCoding">Favourite Coding Language:</label>
-      <input type="radio" id="python" name="language" value="python">
-      <label for="python">Pyhton</label>
-      <input type="radio" id="javaScript" name="language" value="javaScript">
-      <label for="javaScript">Java Script</label>
-      <input type="radio" id="cPlus" name="language" value="cPlus">
-      <label for="cPlus">C++</label>
-    </div>
+    <form id="postForm" method="POST" action="http://localhost:3000/profile">
+      <div>
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName" required />
+      </div>
+      <div>
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName" required />
+      </div>
+      <!-- <button type="submit">Submit</button> -->
 
-    <!-- checkboxes for type of vehicle -->
-    <div>
-      <label for="faveVehicle">Select your Favourite Vehicle:</label>
-      <input type="checkbox" id="toyota" name="vehicle" value="toyota">
-      <label for="toyota">Toyota</label>
-      <input type="checkbox" id="honda" name="vehicle" value="honda">
-      <label for="honda">Honda</label>
-      <input type="checkbox" id="mazda" name="vehicle" value="mazda">
-      <label for="Mazda">Mazda</label>
-    </div> 
+      <!-- radio button -->
+      <div>
+        <label for="faveCoding">Favourite Coding Language:</label>
+        <input type="radio" id="python" name="language" value="python" />
+        <label for="python">Pyhton</label>
+        <input
+          type="radio"
+          id="javaScript"
+          name="language"
+          value="javaScript"
+        />
+        <label for="javaScript">Java Script</label>
+        <input type="radio" id="cPlus" name="language" value="cPlus" />
+        <label for="cPlus">C++</label>
+      </div>
 
-    <!-- dropdown brand of car -->
-    <div>
-      <label for="carBrand">Select your car brand:</label>
-      <select id="carBrand" name="carBrand">
-        <option value="porsche">Porsche</option>
-        <option value="lamborghini">Lamborghini</option>
-        <option value="ferrari">Ferrari</option>
-      </select>
-    </div>
+      <!-- checkboxes for type of vehicle -->
+      <div>
+        <label for="faveVehicle">Select your Favourite Vehicle:</label>
+        <input type="checkbox" id="toyota" name="vehicle" value="toyota" />
+        <label for="toyota">Toyota</label>
+        <input type="checkbox" id="honda" name="vehicle" value="honda" />
+        <label for="honda">Honda</label>
+        <input type="checkbox" id="mazda" name="vehicle" value="mazda" />
+        <label for="Mazda">Mazda</label>
+      </div>
 
-    <button type="submit">Submit</button>
+      <!-- dropdown brand of car -->
+      <div>
+        <label for="carBrand">Select your car brand:</label>
+        <select id="carBrand" name="carBrand">
+          <option value="porsche">Porsche</option>
+          <option value="lamborghini">Lamborghini</option>
+          <option value="ferrari">Ferrari</option>
+        </select>
+      </div>
 
-    <header>
-      <nav>
-        <!-- works like <a href="/index.html">Home</a> -->
-        <a href="/">Home</a>
-      </nav>
-    </header>
-
+      <button type="submit" id="submit">Submit</button>
+    </form>
+    <header></header>
+    <script src="form.js">
+    </script>
     <main></main>
 
     <footer>Copyright &copy; 2024</footer>
