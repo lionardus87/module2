@@ -1,0 +1,94 @@
+body {
+	font-family: sans-serif;
+	font-size: 16px;
+}
+
+a {
+	text-decoration: none;
+	color: purple;
+}
+
+.background-1 {
+	background: #68b0ab;
+}
+
+.background-2 {
+	background: #8fc0a9;
+}
+
+.background-3 {
+	background: #c8d5b9;
+}
+
+.background-4 {
+	background: #faf3dd;
+}
+
+.m-20 {
+	margin: 20px;
+}
+
+.h-80 {
+	min-height: 80px;
+}
+
+.h-400 {
+	height: 400px;
+}
+
+.w-80 {
+	width: 80px;
+}
+
+/* Question 2 */
+.flex-container {
+	display: flex;
+    flex-direction:row-reverse; /* Question 6 */
+}
+
+.flex-item-1 {
+	flex: 1;
+}
+
+.flex-item-2 {
+	flex: 2;
+}
+
+.flex-item-3 {
+	flex: 3;
+}
+
+.flex-item-4 {
+	flex: 4;
+}
+
+.h-80 {
+	height: 80px;
+}
+
+.m-20 {
+	margin: 20px;
+}
+
+/* Question 3 */
+.flex-center{
+    justify-content:center;
+    align-items:center;
+}
+
+/* Question 4 */
+.flex-space-between{
+    justify-content: space-between;;
+}
+
+/* Question 5 */
+.flex-wrap{
+    flex-wrap: wrap-reverse;
+    flex-basis: 50%;
+}
+
+.flex-basis-item-50{
+    flex-wrap: wrap;
+    flex-basis: 25%;
+}
+

@@ -1,133 +1,136 @@
 /* I. Selectors */
 /* Put styles for questions 1.1, 1.2, 1.3 and 1.4 here */
 article {
-  margin: 20px 0;
-  padding: 20px;
-  border: 1px solid black;
+	margin: 20px 0;
+	padding: 20px;
+	border: 1px solid black;
 }
 
 .style-me1 {
-  color: red;
+	color: red;
 }
 
 #style-me2 {
-  color: blue;
+	color: blue;
 }
 
 #style-me2.style-me1 {
-  color: purple;
+	color: purple;
 }
 
 /* Put styles for questions 2.1 and 2.2 here */
 .my-descendants-are-styled p {
-  background: red;
+	background: red;
 }
 
 .my-children-are-styled > p {
-  background: lightgreen;
+	background: lightgreen;
 }
 
 /* II. Box model and common properties */
 /* Put styles for questions 1-8 here */
 .box {
-  background-color: aqua;
-  margin: 2px;
-  padding: 5em;
-  width: 30vh;
-  height: 30vh !important;
-  border-style: double;
-  border: 2px solid black;
-  box-sizing: border-box;
-  overflow: scroll;
-  outline-width: 10px;
-  border-radius: 50%;
-  border-width: 10px;
-  background: url("./assets/images/img1.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  /border: 2px solid black;
+	background-color: aqua;
+	margin: 2px;
+	padding: 5em;
+	width: 30vh;
+	height: 30vh !important;
+	border-style: double;
+	border: 2px solid black;
+	box-sizing: border-box;
+	overflow: scroll;
+	outline-width: 10px;
+	border-radius: 50%;
+	border-width: 10px;
+	background: url("./assets/images/img1.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	/border: 2px solid black;
 }
 
 /* III. Positioning */
 /* Put styles for questions 1-3 here */
 .position-absolute {
-  position: absolute;
-  background-color: yellow;
-  top: 0;
-  left: 70%;
-  right: 20%;
-  width: auto;
+	position: absolute;
+	background-color: yellow;
+	top: 0;
+	left: 70%;
+	right: 20%;
+	width: auto;
 }
 
 .position-relative {
-  position: relative;
-  background-color: chartreuse;
-  left: 50px;
-  right: 50px;
+	position: relative;
+	background-color: chartreuse;
+	left: 50px;
+	right: 50px;
 }
 
 .position-sticky {
-  position: sticky;
-  background-color: beige;
-  top: 20px;
+	position: sticky;
+	background-color: beige;
+	top: 20px;
 }
 
 /* IV. Styling text */
 /* Put styles for questions 1-10 here */
 .text-style {
-  color: red;
-  font-size: 18px;
-  line-height: 2;
-  font-weight: 700;
+	color: red;
+	font-size: 18px;
+	line-height: 2;
+	font-weight: 700;
 }
 
 .jost-<uniquifier > {
-  font-family: "Jost", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+	font-family: "Jost", serif;
+	font-optical-sizing: auto;
+	font-weight: <weight>;
+	font-style: normal;
 }
 /* V. Styling links */
 /* Put styles for questions 1-3 here */
-a, a:link {
-    color: midnightblue;
-    font-size: 16px;
-    font-weight: 600; 
-    text-decoration: none;
+a,
+a:link {
+	color: midnightblue;
+	font-size: 16px;
+	font-weight: 600;
+	text-decoration: none;
 }
 
-a:hover, a:active, a:focus {
-    color: green; 
-    text-decoration: underline;
+a:hover,
+a:active,
+a:focus {
+	color: green;
+	text-decoration: underline;
 }
 
 a:visited {
-    color: purple; 
-    font-style: italic;
+	color: purple;
+	font-style: italic;
 }
 
 /* VI. calc() */
 /* Put styles for questions 1-3 here */
 .calc-style {
-    width: 100vw;
-    background-color:aquamarine;
+	width: 100vw;
+	background-color: aquamarine;
 }
 
 .calc-style {
-    width: calc(100vw - 100px);
+	width: calc(100vw - 100px);
 }
 
 .fixed-width-col {
-    width: 350px;
-    display: inline-block;
-    background-color: lightblue;
-    padding: 10px;
+	width: 350px;
+	display: inline-block;
+	background-color: lightblue;
+	padding: 10px;
 }
 
 .fluid-col {
-    display: inline-block;
-    width: calc(100% - 350px);
-    background-color: lightgreen;
-    padding: 10px;
+	display: inline-block;
+	width: calc(100% - 350px);
+	background-color: lightgreen;
+	padding: 10px;
 }
